@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: https://ssl.gstatic.com 'unsafe-eval' https://backend-s0hl.onrender.com; style-src 'self' 'unsafe-inline'; media-src *; img-src * data: content:;">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
+        <link rel="stylesheet" type="text/css" href="css/index.css">
+        <title>Pizzaria Admin App</title>
+    </head>
+    <body>
+        <!-- Tela Lista das Pizzas Cadastradas -->
+        <div class="app-lista" id="applista">
+            <div class="superior" id="listaPizzas">
+                <!-- As pizzas cadastradas serão inseridas aqui -->
+                <div class="linha">Nenhuma pizza cadastrada.</div>
+            </div>
+            <div class="inferior">
+                <button class="botao-novo" id="btnNovo">NOVA PIZZA</button>
+            </div>
+        </div>
+
+        <!-- Tela Cadastro de Novas Pizzas -->
+        <div class="app-cadastro" id="appcadastro" style="display: none;">
+            <div class="imagem" id="imagem">
+                <!-- Imagem da pizza será exibida aqui -->
+            </div>
+            <div class="form">
+                <div class="form-linha">
+                    <div class="form-linha-esq">Pizza:</div>
+                    <div class="form-linha-dir">
+                        <input type="text" id="pizza" placeholder="Nome da Pizza">
+                    </div>
+                </div>
+                <div class="form-linha">
+                    <div class="form-linha-esq">Preço:</div>
+                    <div class="form-linha-dir">
+                        <input type="number" id="preco" placeholder="Preço (ex: 45.90)">
+                    </div>
+                </div>
+            </div>
+            <div class="botoes">
+                <button class="botao" id="btnFoto">Foto</button>
+                <button class="botao" id="btnSalvar">Salvar</button>
+                <button class="botao" id="btnExcluir">Excluir</button>
+                <button class="botao" id="btnCancelar">Cancelar</button>
+            </div>
+        </div>
+
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+    </body>
+</html>
